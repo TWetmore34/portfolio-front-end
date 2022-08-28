@@ -4,7 +4,7 @@ import Navbar from 'react-bootstrap/Navbar';
 import NavDropdown from 'react-bootstrap/NavDropdown';
 import { Link } from 'react-router-dom'
 // change the links here to link elements when we switch to react router
-function Header() {
+function Header({ projects }) {
   return (
     <Navbar className='bg-custom' expand="lg">
       <Container>
@@ -19,11 +19,13 @@ function Header() {
                 <Link className='nav-link' to='/contact'>Contact</Link>
             </Nav.Link>
             <NavDropdown className='nav-link' title="Projects" id="basic-nav-dropdown">
-              <NavDropdown.Item className='nav-link' href="#action/3.1">Project 1</NavDropdown.Item>
-              <NavDropdown.Item className='nav-link' href="#action/3.2">
-                Project 2
+              {projects.map((project) => (
+              <NavDropdown.Item className='nav-link'>
+                <Link to={project.path}>
+                {project.title}
+                </Link>
               </NavDropdown.Item>
-              <NavDropdown.Item className='nav-link' href="#action/3.3">Project 3</NavDropdown.Item>
+              ))}
               <NavDropdown.Divider />
               <NavDropdown.Item>
                 <Link className='nav-link' to='/projects'>

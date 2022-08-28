@@ -16,21 +16,24 @@ function App() {
       description: 'Take on a daily coding challenge with a built in code editor. Features login Authorization, code editor, and daily email reminders when new challenges are posted. Each day, a new challenge is revealed for you to attempt!',
       tech: ['Express api,','Node.js,','Handlebars,','ace.io,','nodemailer'],
       img: 'https://picsum.photos/300/200',
-      id: 0
+      id: 0,
+      path: '/projects/0'
     },
     {
       title: 'Code Blog',
-      description: '',
-      tech: ['Handlebars,','Express api,','node.js'],
+      description: 'Small blog setup with a mySQL database',
+      tech: ['Handlebars,','Express api,','node.js,','Sequelize,','mySQL'],
       img: 'https://picsum.photos/300/200',
-      id: 1
+      id: 1,
+      path: '/projects/1'
     },
     {
       title: 'Social Media Site',
-      description: '',
-      tech: ['','',''],
+      description: 'Back end setup for a small scale social media site. Built to act as a rest api with Node.js and express, this app includes functionality to add users, posts, friends, and more!',
+      tech: ['mongoDB','mongoose','Node.js','Express api'],
       img: 'https://picsum.photos/300/200',
-      id: 2
+      id: 2,
+      path: '/projects/2'
     },
     {
       title: 'Travel Log API',
@@ -38,6 +41,7 @@ function App() {
       tech: ['Express api,','Node.js'],
       img: 'https://picsum.photos/300/200',
       id: 3,
+      path: '/projects/3',
       github: 'https://github.com/TWetmore34/Travel-site-log-api'
     },
     {
@@ -45,14 +49,16 @@ function App() {
       description: 'Just Another Text Editor is a fully functioning in-browser text editor that features a download for offline use, as well as in-memory caching, so you klnow your work is always saved!',
       tech: ['Webpack,','Node.js'],
       img: 'https://picsum.photos/300/200',
-      id: 4
+      id: 4,
+      path: '/projects/4'
     },
     {
       title: 'TSG (The Song Goes...)',
       description: '',
       tech: ['Youtube api,','Shazam api,', 'Vanilla J.S'],
       img: 'https://picsum.photos/300/200',
-      id: 5
+      id: 5,
+      path: '/projects/5'
     },
   ]
 
@@ -60,14 +66,14 @@ function App() {
 
   return (
     <div>
-      <BrowserRouter>
-      <Header />
+      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <Header projects={projects} />
       <Routes>
 
       <Route path='/' element={
               <div className='row'>
               <Introduction />
-              <Featured />
+              <Featured project={projects[0]} />
               </div>
       } />
 
