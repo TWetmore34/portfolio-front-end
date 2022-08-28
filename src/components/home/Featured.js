@@ -1,16 +1,15 @@
-import Button from 'react-bootstrap/Button';
 import Card from 'react-bootstrap/Card';
 import { Link } from 'react-router-dom'
 
-function Featured() {
+function Featured({ project }) {
   return (
-    <Card className='col-md-6 mx-xs-auto m-md-3' style={{ width: '26rem' }}>
+    <Card className='col-lg-7 col-md-5 mx-sm-auto m-md-5' style={{ width: '36rem', height: '100%' }}>
     <Card.Title className='m-1'>
       <Link style={{ color: 'black' }} to="/projects/0">
         <h2>Featured Project</h2>
       </Link>
     </Card.Title>
-      <Card.Img className='img thumbnail-border' variant="top" src="https://picsum.photos/200" />
+      <Card.Img className='img thumbnail-border' variant="top" src={project.img} />
       <Card.Body>
         <Card.Title className='mx-1'>Daily Dose of Code</Card.Title>
         <Card.Text className='mx-1'>

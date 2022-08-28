@@ -1,37 +1,49 @@
+// components
 import Header from './components/header/Header';
 import Introduction from './components/home/Introduction';
 import Featured from './components/home/Featured';
 import Form from './components/contactForm/Form';
 import ProjectsAll from './components/projects/ProjectsAll';
+import ProjectView from './components/projects/ProjectView';
+
+// styles
 import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
 
+// images
+import { jate, dailyDose, tsg } from './images'
+
+// routing
 import { BrowserRouter, Route, Routes, useParams } from 'react-router-dom';
-import ProjectView from './components/projects/ProjectView';
 
 function App() {
   const projects = [
     {
       title: 'Daily Dose of Code',
       description: 'Take on a daily coding challenge with a built in code editor. Features login Authorization, code editor, and daily email reminders when new challenges are posted. Each day, a new challenge is revealed for you to attempt!',
-      tech: ['Express api,','Node.js,','Handlebars,','ace.io,','nodemailer'],
-      img: 'https://picsum.photos/300/200',
+      tech: ['Express api,','Node.js,','Handlebars,','ace.io,','nodemailer,', 'heroku'],
+      img: dailyDose,
       id: 0,
       path: '/projects/0',
       carousel: [
       {
+        id: 0,
+        imgThumb: dailyDose,
+        imgDesc: 'Built in text editor'
+      },
+      {
+        id: 1,
         imgThumb: 'https://picsum.photos/300/200',
         imgDesc: 'Small description'
       },
       {
-        imgThumb: 'https://picsum.photos/300/200',
-        imgDesc: 'Small description'
-      },
-      {
+        id: 2,
         imgThumb: 'https://picsum.photos/300/200',
         imgDesc: 'Small description'
       }
-    ]
+    ],
+    github: 'https://github.com/TWetmore34/daily-dose-of-code',
+    deployment: 'https://desolate-escarpment-26537.herokuapp.com/'
     },
     {
       title: 'Code Blog',
@@ -42,18 +54,23 @@ function App() {
       path: '/projects/1',
       carousel: [
         {
+          id: 0,
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Built in text editor'
+        },
+        {
+          id: 1,
           imgThumb: 'https://picsum.photos/300/200',
           imgDesc: 'Small description'
         },
         {
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Small description'
-        },
-        {
+          id: 2,
           imgThumb: 'https://picsum.photos/300/200',
           imgDesc: 'Small description'
         }
-      ]
+      ],
+      github: 'https://github.com/TWetmore34/code-blog',
+      deployment: 'https://calm-lake-31825.herokuapp.com/'
     },
     {
       title: 'Social Media Site',
@@ -64,18 +81,22 @@ function App() {
       path: '/projects/2',
       carousel: [
         {
+          id: 0,
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Built in text editor'
+        },
+        {
+          id: 1,
           imgThumb: 'https://picsum.photos/300/200',
           imgDesc: 'Small description'
         },
         {
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Small description'
-        },
-        {
+          id: 2,
           imgThumb: 'https://picsum.photos/300/200',
           imgDesc: 'Small description'
         }
-      ]
+      ],
+      github: 'https://github.com/TWetmore34/mock-social-media'
     },
     {
       title: 'Travel Log API',
@@ -86,14 +107,17 @@ function App() {
       path: '/projects/3',
       carousel: [
         {
+          id: 0,
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Built in text editor'
+        },
+        {
+          id: 1,
           imgThumb: 'https://picsum.photos/300/200',
           imgDesc: 'Small description'
         },
         {
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Small description'
-        },
-        {
+          id: 2,
           imgThumb: 'https://picsum.photos/300/200',
           imgDesc: 'Small description'
         }
@@ -104,53 +128,64 @@ function App() {
       title: 'J.A.T.E',
       description: 'Just Another Text Editor is a fully functioning in-browser text editor that features a download for offline use, as well as in-memory caching, so you klnow your work is always saved!',
       tech: ['Webpack,','Node.js'],
-      img: 'https://picsum.photos/300/200',
+      img: jate,
       id: 4,
       path: '/projects/4',
       carousel: [
         {
+          id: 0,
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Built in text editor'
+        },
+        {
+          id: 1,
           imgThumb: 'https://picsum.photos/300/200',
           imgDesc: 'Small description'
         },
         {
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Small description'
-        },
-        {
+          id: 2,
           imgThumb: 'https://picsum.photos/300/200',
           imgDesc: 'Small description'
         }
-      ]
+      ],
+      deployment: 'https://gentle-fortress-36739.herokuapp.com/',
+      github: 'https://github.com/TWetmore34/JATE-webpack-setup'
     },
     {
       title: 'TSG (The Song Goes...)',
       description: '',
       tech: ['Youtube api,','Shazam api,', 'Vanilla J.S'],
-      img: 'https://picsum.photos/300/200',
+      img: tsg,
       id: 5,
       path: '/projects/5',
       carousel: [
         {
+          id: 0,
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Built in text editor'
+        },
+        {
+          id: 1,
           imgThumb: 'https://picsum.photos/300/200',
           imgDesc: 'Small description'
         },
         {
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Small description'
-        },
-        {
+          id: 2,
           imgThumb: 'https://picsum.photos/300/200',
           imgDesc: 'Small description'
         }
-      ]
+      ],
+      github: 'https://github.com/TWetmore34/TSG-APP-Project-1',
+      deployment: 'https://oz4tech.github.io/TSG-APP-Project-1/'
     },
   ]
 
-
+  console.log(projects[0].img)
 
   return (
     <div>
-      <BrowserRouter basename={process.env.PUBLIC_URL}>
+      <BrowserRouter // basename={process.env.PUBLIC_URL}
+      >
       <Header projects={projects} />
       <Routes>
 
