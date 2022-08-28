@@ -1,0 +1,45 @@
+.bg-custom {
+    background-color: #A7C4C2;
+}
+
+.btn-primary {
+    background-color: #0096A3;
+    border: 1px solid #0096A3;
+}
+
+.thumbnail-border {
+    border: 1px solid #0096A3;
+}
+
+.custom-input {
+    border-radius: 7px;
+    border: 2px solid black;
+}
+
+.logo{
+    width: 5%;
+    height: 5%;
+    margin: 1%;
+}
+
+.border-img {
+    border: 5px solid black;
+    border-radius: 2px;
+}
+
+li {
+    list-style-type: none;
+}
+
+.font-weight-bold {
+    font-weight: bold;
+}
+
+.dimensions-carousel {
+    height: 500px;
+}
+
+.dimensions-carousel img {
+    width: auto;
+    height: 500px;
+}
