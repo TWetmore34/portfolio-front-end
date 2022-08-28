@@ -1,45 +1,21 @@
 import Carousel from 'react-bootstrap/Carousel';
 
-function ImgDisplay() {
+function ImgDisplay({ project }) {
   return (
     <Carousel className='col-10 mx-auto my-4 dimensions-carousel'>
-      <Carousel.Item>
+      {project.carousel.map(entry => (
+        <Carousel.Item>
         <img
           className="d-block w-100"
-          src="https://picsum.photos/300/200"
+          src={entry.imgThumb}
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>First slide label</h3>
+          <h3>{entry.imgDesc}</h3>
           <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
         </Carousel.Caption>
       </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://picsum.photos/300/200"
-          alt="Second slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Second slide label</h3>
-          <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit.</p>
-        </Carousel.Caption>
-      </Carousel.Item>
-      <Carousel.Item>
-        <img
-          className="d-block w-100"
-          src="https://picsum.photos/300/200"
-          alt="Third slide"
-        />
-
-        <Carousel.Caption>
-          <h3>Third slide label</h3>
-          <p>
-            Praesent commodo cursus magna, vel scelerisque nisl consectetur.
-          </p>
-        </Carousel.Caption>
-      </Carousel.Item>
+      ))}
     </Carousel>
   );
 }

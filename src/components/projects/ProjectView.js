@@ -8,7 +8,7 @@ const ProjectView = ({ project }) => {
 
   return (
     <div>
-        <ImgDisplay />
+        <ImgDisplay project={current} />
         <h2 className="text-center">{current.title}</h2>
     </div>
   )

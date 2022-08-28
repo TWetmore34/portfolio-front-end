@@ -17,7 +17,21 @@ function App() {
       tech: ['Express api,','Node.js,','Handlebars,','ace.io,','nodemailer'],
       img: 'https://picsum.photos/300/200',
       id: 0,
-      path: '/projects/0'
+      path: '/projects/0',
+      carousel: [
+      {
+        imgThumb: 'https://picsum.photos/300/200',
+        imgDesc: 'Small description'
+      },
+      {
+        imgThumb: 'https://picsum.photos/300/200',
+        imgDesc: 'Small description'
+      },
+      {
+        imgThumb: 'https://picsum.photos/300/200',
+        imgDesc: 'Small description'
+      }
+    ]
     },
     {
       title: 'Code Blog',
@@ -25,7 +39,21 @@ function App() {
       tech: ['Handlebars,','Express api,','node.js,','Sequelize,','mySQL'],
       img: 'https://picsum.photos/300/200',
       id: 1,
-      path: '/projects/1'
+      path: '/projects/1',
+      carousel: [
+        {
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Small description'
+        },
+        {
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Small description'
+        },
+        {
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Small description'
+        }
+      ]
     },
     {
       title: 'Social Media Site',
@@ -33,7 +61,21 @@ function App() {
       tech: ['mongoDB','mongoose','Node.js','Express api'],
       img: 'https://picsum.photos/300/200',
       id: 2,
-      path: '/projects/2'
+      path: '/projects/2',
+      carousel: [
+        {
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Small description'
+        },
+        {
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Small description'
+        },
+        {
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Small description'
+        }
+      ]
     },
     {
       title: 'Travel Log API',
@@ -42,6 +84,20 @@ function App() {
       img: 'https://picsum.photos/300/200',
       id: 3,
       path: '/projects/3',
+      carousel: [
+        {
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Small description'
+        },
+        {
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Small description'
+        },
+        {
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Small description'
+        }
+      ],
       github: 'https://github.com/TWetmore34/Travel-site-log-api'
     },
     {
@@ -50,7 +106,21 @@ function App() {
       tech: ['Webpack,','Node.js'],
       img: 'https://picsum.photos/300/200',
       id: 4,
-      path: '/projects/4'
+      path: '/projects/4',
+      carousel: [
+        {
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Small description'
+        },
+        {
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Small description'
+        },
+        {
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Small description'
+        }
+      ]
     },
     {
       title: 'TSG (The Song Goes...)',
@@ -58,7 +128,21 @@ function App() {
       tech: ['Youtube api,','Shazam api,', 'Vanilla J.S'],
       img: 'https://picsum.photos/300/200',
       id: 5,
-      path: '/projects/5'
+      path: '/projects/5',
+      carousel: [
+        {
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Small description'
+        },
+        {
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Small description'
+        },
+        {
+          imgThumb: 'https://picsum.photos/300/200',
+          imgDesc: 'Small description'
+        }
+      ]
     },
   ]
 
