@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
 
 // images
-import { jate, dailyDose, tsg } from './images'
+import { jate, dailyDose, tsg, blog } from './images'
 
 // routing
 import { BrowserRouter, Route, Routes, useParams } from 'react-router-dom';
@@ -49,24 +49,24 @@ function App() {
       title: 'Code Blog',
       description: 'Small blog setup with a mySQL database',
       tech: ['Handlebars,','Express api,','node.js,','Sequelize,','mySQL'],
-      img: 'https://picsum.photos/300/200',
+      img: blog.thumbnail,
       id: 1,
       path: '/projects/1',
       carousel: [
         {
           id: 0,
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Built in text editor'
+          imgThumb: blog.thumbnail,
+          imgDesc: 'Landing page for code blog'
         },
         {
           id: 1,
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Small description'
+          imgThumb: blog.cookie,
+          imgDesc: 'Cookie setup is how we keep track of login sessions for users, along with navigation to the user dashboard'
         },
         {
           id: 2,
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Small description'
+          imgThumb: blog.login,
+          imgDesc: 'Login screen'
         }
       ],
       github: 'https://github.com/TWetmore34/code-blog',
@@ -128,24 +128,24 @@ function App() {
       title: 'J.A.T.E',
       description: 'Just Another Text Editor is a fully functioning in-browser text editor that features a download for offline use, as well as in-memory caching, so you klnow your work is always saved!',
       tech: ['Webpack,','Node.js'],
-      img: jate,
+      img: jate.thumbnail,
       id: 4,
       path: '/projects/4',
       carousel: [
         {
           id: 0,
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Built in text editor'
+          imgThumb: jate.sw,
+          imgDesc: 'Service worker saved onto the browser helps display static assets'
         },
         {
           id: 1,
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Small description'
+          imgThumb: jate.indexCache,
+          imgDesc: 'Cache for the index.html file makes for much faster loadtimes on second visit'
         },
         {
           id: 2,
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Small description'
+          imgThumb: jate.workboxCache,
+          imgDesc: 'Cache created by WorkBox helps store assets for the service worker'
         }
       ],
       deployment: 'https://gentle-fortress-36739.herokuapp.com/',

@@ -11,8 +11,7 @@ function ImgDisplay({ project }) {
           alt="First slide"
         />
         <Carousel.Caption>
-          <h3>{entry.imgDesc}</h3>
-          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+          <h3 style={{color: 'black'}}>{entry.imgDesc}</h3>
         </Carousel.Caption>
       </Carousel.Item>
       ))}

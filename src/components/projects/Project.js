@@ -3,7 +3,7 @@ const Project = ({ project }) => {
   return (
     <div className="col-3 mx-3">
         <div className="text-center">
-        <h2><Link to={project.id}>{project.title}</Link></h2>
+        <h2><Link to={project.path}>{project.title}</Link></h2>
         <img className="img img-responsive img-thumbnail w-100" src={project.img} alt='project thumbnail'></img>
         <div className="m-2">
         <p>{project.description}</p>
