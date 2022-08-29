@@ -16,6 +16,17 @@ module.exports = {
         get1: require('./thought-get.png'),
         get2: require('./user-get.png'),
     },
-    dailyDose: require('./dailyDose.png'),
-    tsg: require('./tsg.png')
+    dailyDose: {
+        thumbnail: require('./dailyDose.png')
+    },
+    tsg: {
+        thumbnail: require('./tsg.png'),
+        endpoint: require('./endpoint.png'),
+        search: require('./search.png')
+    },
+    regex: {
+        thumbnail: require('./thumbnail.png'),
+        maker: require('./maker.png'),
+        codepen: require('./codepen.png')
+    }
 }

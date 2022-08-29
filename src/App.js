@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
 
 // images
-import { jate, dailyDose, tsg, blog, social } from './images'
+import { jate, dailyDose, tsg, blog, social, regex } from './images'
 
 // routing
 import { BrowserRouter, Route, Routes, useParams } from 'react-router-dom';
@@ -22,13 +22,13 @@ function App() {
       title: 'Daily Dose of Code',
       description: 'Take on a daily coding challenge with a built in code editor. Features login Authorization, code editor, and daily email reminders when new challenges are posted. Each day, a new challenge is revealed for you to attempt!',
       tech: ['Express api,','Node.js,','Handlebars,','ace.io,','nodemailer,', 'heroku'],
-      img: dailyDose,
+      img: dailyDose.thumbnail,
       id: 0,
       path: '/projects/0',
       carousel: [
       {
         id: 0,
-        imgThumb: dailyDose,
+        imgThumb: dailyDose.thumbnail,
         imgDesc: 'Built in text editor'
       },
       {
@@ -99,27 +99,27 @@ function App() {
       github: 'https://github.com/TWetmore34/mock-social-media'
     },
     {
-      title: 'Travel Log API',
-      description: 'A fully developed rest-ish api using a mySQL database. The site is back end only, but once deployed or installed on a local machine, it includes seed data and saves queries against an api for faster response times on use.',
+      title: 'Regex Tutorial',
+      description: 'A short tutorial on regexes featuring a series of codepens. Focused on regex methods, it also includes a work in progress regex creator',
       tech: ['Express api,','Node.js'],
-      img: 'https://picsum.photos/300/200',
+      img: regex.thumbnail,
       id: 3,
       path: '/projects/3',
       carousel: [
         {
           id: 0,
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Built in text editor'
+          imgThumb: regex.thumbnail,
+          imgDesc: ''
         },
         {
           id: 1,
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Small description'
+          imgThumb: regex.maker,
+          imgDesc: ''
         },
         {
           id: 2,
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Small description'
+          imgThumb: regex.codepen,
+          imgDesc: ''
         }
       ],
       github: 'https://github.com/TWetmore34/Travel-site-log-api'
@@ -155,24 +155,24 @@ function App() {
       title: 'TSG (The Song Goes...)',
       description: '',
       tech: ['Youtube api,','Shazam api,', 'Vanilla J.S'],
-      img: tsg,
+      img: tsg.thumbnail,
       id: 5,
       path: '/projects/5',
       carousel: [
         {
           id: 0,
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Built in text editor'
+          imgThumb: tsg.thumbnail,
+          imgDesc: 'Landing page for TSG'
         },
         {
           id: 1,
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Small description'
+          imgThumb: tsg.search,
+          imgDesc: 'Example search query on TSG'
         },
         {
           id: 2,
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Small description'
+          imgThumb: tsg.endpoint,
+          imgDesc: 'Endpoint for tsg shazam links'
         }
       ],
       github: 'https://github.com/TWetmore34/TSG-APP-Project-1',
