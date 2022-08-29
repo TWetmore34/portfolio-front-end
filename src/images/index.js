@@ -11,6 +11,11 @@ module.exports = {
         cookie: require('./cookie-setup.png'),
         login: require('./login-screen.png')
     },
+    social: {
+        thumbnail: require('./folder-structure.png'),
+        get1: require('./thought-get.png'),
+        get2: require('./user-get.png'),
+    },
     dailyDose: require('./dailyDose.png'),
     tsg: require('./tsg.png')
 }

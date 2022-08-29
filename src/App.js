@@ -11,7 +11,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import './style.css'
 
 // images
-import { jate, dailyDose, tsg, blog } from './images'
+import { jate, dailyDose, tsg, blog, social } from './images'
 
 // routing
 import { BrowserRouter, Route, Routes, useParams } from 'react-router-dom';
@@ -76,24 +76,24 @@ function App() {
       title: 'Social Media Site',
       description: 'Back end setup for a small scale social media site. Built to act as a rest api with Node.js and express, this app includes functionality to add users, posts, friends, and more!',
       tech: ['mongoDB','mongoose','Node.js','Express api'],
-      img: 'https://picsum.photos/300/200',
+      img: social.thumbnail,
       id: 2,
       path: '/projects/2',
       carousel: [
         {
           id: 0,
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Built in text editor'
+          imgThumb: social.thumbnail,
+          imgDesc: 'Back end folder structure for the repository'
         },
         {
           id: 1,
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Small description'
+          imgThumb: social.get1,
+          imgDesc: 'Simple get request for posted thoughts'
         },
         {
           id: 2,
-          imgThumb: 'https://picsum.photos/300/200',
-          imgDesc: 'Small description'
+          imgThumb: social.get2,
+          imgDesc: 'Get request for created users'
         }
       ],
       github: 'https://github.com/TWetmore34/mock-social-media'
