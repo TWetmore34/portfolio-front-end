@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom'
 
 function Featured({ project }) {
   return (
-    <Card className='col-lg-7 col-md-5 mx-sm-auto m-md-5' style={{ width: '36rem', height: '100%' }}>
+    <Card className='col-lg-7 col-md-5 mx-auto mx-sm-5 m-md-5' style={{ width: '36rem', height: '100%' }}>
     <Card.Title className='m-1'>
       <Link style={{ color: 'black' }} to="/projects/0">
         <h2>Featured Project</h2>

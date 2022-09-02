@@ -8,7 +8,9 @@ function Header({ projects }) {
   return (
     <Navbar className='bg-custom' expand="lg">
       <Container>
-        <Navbar.Brand href="/">TJ Wetmore</Navbar.Brand>
+        <Navbar.Brand>
+          <Link className='no-under' to={'/'}>TJ Wetmore</Link>
+        </Navbar.Brand>
         <Navbar.Toggle aria-controls="basic-navbar-nav" />
         <Navbar.Collapse id="basic-navbar-nav">
           <Nav className="me-auto">
@@ -20,7 +22,7 @@ function Header({ projects }) {
             </Nav.Link>
             <NavDropdown className='nav-link' title="Projects" id="basic-nav-dropdown">
               {projects.map((project) => (
-              <NavDropdown.Item key={project.id} className='nav-link'>
+              <NavDropdown.Item key={project.id} className='nav-link mx-2'>
                 <Link to={project.path}>
                 {project.title}
                 </Link>

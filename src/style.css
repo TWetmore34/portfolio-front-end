@@ -43,3 +43,11 @@ li {
     width: auto;
     height: 500px;
 }
+
+link, a {
+    color: black;
+}
+
+.no-under {
+    text-decoration: none;
+}

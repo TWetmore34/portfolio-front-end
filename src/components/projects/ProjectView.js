@@ -10,6 +10,7 @@ const ProjectView = ({ project }) => {
     <div>
         <ImgDisplay project={current} />
         <h2 className="text-center">{current.title}</h2>
+        <p>{projectId === 0 ? 'Write the longer description for project 1 here... focus on development philosophy and other stuff related to creating the project' : ''}</p>
     </div>
   )
 }
