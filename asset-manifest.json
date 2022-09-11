@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/portfolio-front-end/static/css/main.a4a35b8b.css",
-    "main.js": "/portfolio-front-end/static/js/main.7c6f00d3.js",
+    "main.js": "/portfolio-front-end/static/js/main.94e3bd5a.js",
     "static/js/787.e734a85e.chunk.js": "/portfolio-front-end/static/js/787.e734a85e.chunk.js",
     "static/media/endpoint.png": "/portfolio-front-end/static/media/endpoint.e91f666e06566324fb88.png",
     "static/media/search.png": "/portfolio-front-end/static/media/search.24b9d2b1a72483d15071.png",
@@ -19,15 +19,16 @@
     "static/media/thumbnail.png": "/portfolio-front-end/static/media/thumbnail.21508e01101753b17f99.png",
     "static/media/dailyDose.png": "/portfolio-front-end/static/media/dailyDose.038a6e6247ca9862cc2a.png",
     "static/media/login-screen.png": "/portfolio-front-end/static/media/login-screen.25921e25f7c90e7d6fbc.png",
+    "static/media/Wetmore_Resume.pdf": "/portfolio-front-end/static/media/Wetmore_Resume.5cde77c409f71d77beaa.pdf",
     "static/media/jate.png": "/portfolio-front-end/static/media/jate.42e77262c99d255db25c.png",
     "static/media/A287D5D1-7B7A-4E81-B790-F06647A44767_1_201_a.jpeg": "/portfolio-front-end/static/media/A287D5D1-7B7A-4E81-B790-F06647A44767_1_201_a.6e74a513b759e7600c44.jpeg",
     "index.html": "/portfolio-front-end/index.html",
     "main.a4a35b8b.css.map": "/portfolio-front-end/static/css/main.a4a35b8b.css.map",
-    "main.7c6f00d3.js.map": "/portfolio-front-end/static/js/main.7c6f00d3.js.map",
+    "main.94e3bd5a.js.map": "/portfolio-front-end/static/js/main.94e3bd5a.js.map",
     "787.e734a85e.chunk.js.map": "/portfolio-front-end/static/js/787.e734a85e.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.a4a35b8b.css",
-    "static/js/main.7c6f00d3.js"
+    "static/js/main.94e3bd5a.js"
   ]
 }
