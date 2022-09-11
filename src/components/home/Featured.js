@@ -3,10 +3,10 @@ import { Link } from 'react-router-dom'
 
 function Featured({ project }) {
   return (
-    <Card className='col-lg-7 col-md-5 mx-auto mx-sm-5 m-md-5' style={{ width: '36rem', height: '100%' }}>
+    <Card className='col-lg-7 col-md-5 mx-auto mx-sm-5 m-md-3' style={{ width: '36rem', height: '100%' }}>
     <Card.Title className='m-1'>
       <Link style={{ color: 'black' }} to="/projects/0">
-        <h2>Featured Project</h2>
+        <h2 className='text-center sm-text-left'>Featured Project</h2>
       </Link>
     </Card.Title>
       <Card.Img className='img thumbnail-border' variant="top" src={project.img} />
